@@ -9,7 +9,7 @@ export class MainConfigService implements TypeOrmOptionsFactory {
     createTypeOrmOptions(): TypeOrmModuleOptions {
         return {
             type: 'better-sqlite3',
-            database: this.configService.get<string>('DB_NAME'),
+            database: 'database/db.sqlite',
             entities: [Device],
             synchronize: true,
             autoLoadEntities: true,
