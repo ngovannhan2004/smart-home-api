@@ -34,11 +34,11 @@ export class Device {
     status: boolean;
 
     @Column({
-        name: 'icon',
-        comment: 'Icon of the device',
+        name: 'image',
+        comment: 'Image of the device',
         type: 'text',
     })
-    icon: string;
+    image: string;
 
     @Column({
         name: 'pin_mode',

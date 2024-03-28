@@ -14,12 +14,12 @@ export class CreateDeviceDto {
     status: boolean;
 
     @ApiProperty({
-        description: 'The icon of the device',
+        description: 'The image of the device',
         example: 'https://cdn-icons-png.flaticon.com/512/1804/1804486.png',
     })
     @IsNotEmpty()
     @IsString()
-    icon: string;
+    image: string;
 
     @ApiProperty({ description: 'The pinMode of the device', example: 1 })
     @IsNotEmpty()
